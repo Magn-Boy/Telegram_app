@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Telegram App',
+      title: 'Telegram App Test',
       theme: TelegramThemeUtil.getTheme(TelegramWebApp.instance),
       home: const MainScreen(),
     );
