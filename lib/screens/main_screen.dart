@@ -14,7 +14,7 @@ class _MainScreenState extends State<MainScreen> {
       backgroundColor: Colors.black45,
       body: Center(
         child: Text(
-          'Негры пидорасы',
+          'Люблю негров',
           style: TextStyle(
             color: Colors.black,
             fontSize: 52,
