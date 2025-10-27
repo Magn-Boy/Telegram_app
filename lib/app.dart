@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:telegram_web_app/telegram_web_app.dart';
 
-import 'home_page.dart';
+import 'screens/main_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -9,10 +10,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Telegram App',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      theme: TelegramThemeUtil.getTheme(TelegramWebApp.instance),
+      home: const MainScreen(),
     );
   }
 }
